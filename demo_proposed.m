@@ -35,9 +35,9 @@ param.sigma_bm3d=logspace(log10(constt),log10(final_noise),maxit);
 load('Spiral.mat'); mask = (Q1);           %Fig. 10 
 %mask = LineMaskLimitedAngle(44,n,pi,0);   %Fig. 11
 %load Cart20                               %Fig. 13
-load Head    %Fig. 10
-%load Knee   %Fig. 11
-%load Brain  %Fig. 13
+load Head.mat    %Fig. 10
+% load Knee   %Fig. 11
+% load Brain  %Fig. 13
 x0 = abs(x0);
 x0 = imresize(x0, [n m]);
 x0 = max(0,real(x0));
